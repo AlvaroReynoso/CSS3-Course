@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-sizing aplica contenido tipo caja estable ,para que no se alteren los tamaños
+    importante definirlos en el general */
+
+}
+h1, h2{
+    text-align: center;
+    color: brown;
+    margin-top: 20px;
+}
+/* padding: es sentido general el valor ,sino aplico sentido horario */
+/* margin : lo dejo general*/
+.divCont1{
+    text-align: center;
+    /*width: 300px; Width fijo*/
+    max-width: 300px; /*El maximo permitido es 300px, entonces se adapta la pagina a 300px,a partir de 300 empieza a ser resposiva parcial*/
+    /* Si me paso de el width con otros valores de elementos ,con box sizing trabo la medida del width  */
+    padding: 15px 5px 10px 1px;
+    border: 2px solid blue;
+    background-color: bisque;
+    outline: 10px inset rgb(53, 129, 119) /* Este es el borde entre el margin y el border */;
+    outline-offset: 5px;   /* espacio entre outline y border,acepta solo 1 valor: IMPORTANTE */
+     /*  centrar elementos */
+         /* MARGIN: AUTO... ESPECIFICACIONES IMPORANTISIMA PARA CENTRAR  */
+    margin: 0 auto;  /* 0 top bottom y auto left y right: lo centra*/
+    /* aca es para separarlo del h1 */
+    margin-top: 30px;    
+
+}
+
+.divCont2{
+    
+    width: 300px; /*Dejo el width fijo para que cuando achique la pagina ,se vea cortado el div*/
+    height: 75px;
+    text-align: center;
+    margin-top: 20px; /*Aca no toma los valores del outline entonces sigue pegado*/
+    padding: 10px 15px 5px 3px;
+    color: wheat;
+    background-color: blueviolet;
+    border: 3px inset black;
+    outline: 5px inset black;  /* No se suma a los valores de padding,margin y border */
+
+}
+/* Importante medir bien todos los valores de px ,incluyendo el width,pad,marg */
+
+p .divCont1{
+    background-color: chartreuse;
+}
+
+.divInherit{
+    margin-left: 100px;
+    margin-top: 20px;
+    max-width: 300px;
+    border: 5px solid blue;
+    background-color: beige;
+    outline: 3px dotted lime;
+    padding: 5px;
+}
+
+p.interno{
+    margin-left: inherit;
+    /* hereda el margin left que se aplica al div donde pertenece el parrafo
+    entonces
+    margin-left: 100px ... margin-left del p = 100px (inherit) */
+}
+
+.caja1{
+    width: 400px;
+    border: 3px solid green;
+    margin: 20px;
+}
+.caja2{
+    width: 400px;
+    border: 3px solid green;
+    margin: 30px;
+}
+/* Aca se va a ver un colapso del mas chico (20px) ,para que el grande (30px) este vigente
+esto se llama margin:collapse */

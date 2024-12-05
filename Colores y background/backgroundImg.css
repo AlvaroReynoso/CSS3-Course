@@ -1,0 +1,30 @@
+
+/* Con propiedad Background: 
+podemos incluir casi todas las subPropiedades menos la de attachment
+podemos crear algo asi..
+background: color URLimg, repeat, position
+ejemplo en h1 */
+
+body{
+    background-color: rgb(0, 175, 93);
+    color: cornsilk;
+    background-image: url(./wallpaper-625623_1920.png);
+    /* para que no se repita la imagen de fondo necesito repeat: no-repeat */
+    background-repeat: no-repeat;
+}
+
+
+h1{
+    /* simplificado seria asi:
+    background: rgb(2, 40, 111) url(./nature-3881938_1920.jpg) no-repeat right bottom; */
+    height: 200px;
+    text-align: center;
+    background-color: rgb(2, 40, 111);
+    background-image: url(./nature-3881938_1920.jpg);
+    background-repeat: no-repeat;
+    /* posicion de la imagen con position : right top, left bottom ,etc */
+    background-position: right bottom;
+    /* la imagen no sigue al scroll ,es para dejarla estatica o 
+    Para que se mueva la imagen en base al scroll, usamos "fixed" */
+   background-attachment: fixed;
+}

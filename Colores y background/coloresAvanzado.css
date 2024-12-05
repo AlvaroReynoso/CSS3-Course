@@ -1,0 +1,58 @@
+
+
+h1{
+    text-align: center;
+    color: #e63946;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.caja{
+    padding: 10px;
+    color: white;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    font-size: 10px;
+    margin: 5px auto;
+    float: left;
+
+}
+
+
+/* Hay 140 nombres de colores ,se pueden buscar en https://htmlcolorcodes.com/color-names/
+,al escribir solo el nombre en css,este va a existir y se aplicara */
+
+.rojo{
+    background-color: crimson;
+}
+
+.rosa{
+    background-color: deeppink;
+}
+.violetaRGB{
+    background-color: rgb(131, 56, 236);
+}
+
+/* a es canal alpha: aplica transparencia */
+.violetaRGBA{
+background-color: rgba(131,56,236,0.55);
+}
+/* en Hexa podemos simplificar 2 letras iguales por 1 sola ,digamos si tengo un par FF
+podemos poner F 1 vez => FFAA32 =FA3 (quito la transparencia si no hay ,borramos el 2) */
+.hexa{
+    background-color: #0090ad;
+}
+.hexaTransparente{
+    background-color: #0090ad86;
+}
+.hsl{
+    background-color: hsl(195, 100%, 50%);
+}
+.hsla{
+    background-color: hsl(195, 100%, 50%, 50%);
+}
