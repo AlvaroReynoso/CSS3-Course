@@ -1,0 +1,38 @@
+h1{
+    color: #ef47ef;
+    text-align: center;
+    /* transforma a mayus o la primer letra mayus */
+    text-transform: uppercase;
+    /* text-shadow: eje x ,eje y, blur,color */
+    text-shadow: 2px 2px 2px #ced4da;
+    /* separar caracteres */
+    letter-spacing: 2px;
+    /* separar palabras */
+    word-spacing: 3px;
+    /* decoration puedo pasar 2 valores */
+    text-decoration: overline underline;
+}
+
+.parCont{
+color: white;
+padding: 15px;
+margin: auto;
+width: 70%;
+background-color: #219ebc;
+border-radius: 5px;
+}
+
+.texto{
+    /* importante : para que quede centrado y alineado, tambien que las oraciones esten bien distribuidas */
+    text-align: justify;
+    /* no se ve mucho pero es la distribucion de las palabras ,de right to left */
+    direction: ltr;
+    text-decoration: none;
+    /* sangria */
+    text-indent: 30px;
+    /* espacio entre lineas de parrafo */
+    line-height: 1.6;
+    /* con nowrap no se envuelve dentro del div ,sino que el parrafo sigue de largo fuera del div */
+    white-space: normal;
+    text-shadow: 1px 1px 2px #ced4da;
+}
