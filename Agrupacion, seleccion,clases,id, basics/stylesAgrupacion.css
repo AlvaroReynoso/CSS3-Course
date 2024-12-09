@@ -1,0 +1,29 @@
+/* Agrupacion y seleccion */
+h1,h2,p{
+    color: red;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+/* Subclases: Se selecciona todo pegado ej: h4.centrar o p.alinear */
+/* Esto se aplica solo a estos h3 ,si seleccionamos h3{} se aplica a todos menos a estos */
+
+h3.centrar{
+    text-align: center;
+    color: darkgreen;
+    /* border: none; Si yo aplicaria esto pisaria el border del general h3*/
+}
+h4.centrar{
+    text-align: center;
+    color: blue;
+}
+
+/* Aca corroboramos que no se aplica a este h3 ,xq el h3 que hay tiene una subclase que es prioridad
+Si se pisa un valor no pasa nada ,si se crea un valor que la subclase no tiene se aplica tambien a la subclase */
+
+h3{
+    color: darkslateblue;
+    text-align: left;
+    background-color: burlywood;
+    border: 1px solid black;
+}

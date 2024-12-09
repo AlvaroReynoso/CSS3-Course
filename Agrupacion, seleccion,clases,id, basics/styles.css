@@ -1,0 +1,32 @@
+*{
+    /* Marcador universal ,se aplica a todos */
+    background-color: ghostwhite;
+    color: red;
+}
+
+#titulo{
+    color: rebeccapurple;
+    text-align: center;
+    background-color: bisque;
+}
+#subtitulo{
+    color: blue;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.parrafo-cont{
+    text-align: center;
+    background-color: violet;
+    color: blue;
+}
+.texto-grande-cont{
+    color: rgb(16, 49, 158);
+    background-color: chartreuse;
+    font-size: 30px;
+}
+
+.centrar{
+    text-align: center;
+
+}
