@@ -1,0 +1,62 @@
+h1{
+    text-align: center;
+    color: darkcyan;
+}
+/* Border-style: Muestra todas las formas de bordes: dotted,groove,double,inherit */
+.bordePunteado{
+border-style: dotted;
+/* cambiar width en sentido horario,como me falta un valor ,left y right toman el 5px */
+border-width: 10px 8px 6px;
+}
+
+.bordeDiscontinuo{
+    border-style: dashed;
+    /* thick,medium,thin: formas etablecidas de width */
+    border-width: thick;
+}
+
+.bordeSolido{
+    border-style: solid;
+}
+
+/* Con border: simplificamos color y forma de borde ,tambien tamaño de la forma */
+/* Propiedad requrida si o si en border: es style: ej=> border: solid blue ...Podemos evitar color y tamaño*/
+
+.bordeDoble{
+    /* El width pisa el valor de border 5px ,y al tener 2 valores son: 1ro=top-bottom 2do=left-right */
+    border: 5px double black;
+    border-width: 10px 5px;
+}
+
+/* Separado desde border seria : border-width , border-style, border-color */
+.bordeSurco{
+    border-style: groove ;
+    border-width: 10px;
+    border-color: black;
+}
+
+/* Podemos aplicar colores distintos en sentido horario */
+
+.bordeCresta{
+    border:10px ridge black;
+    border-color: crimson blue lime;
+}
+
+/* aplico border-radius en px para dar bordes redondeados,tambien se puede aplicar en sentido horario para las 4 caras */
+/* solo que 1ro: borde TopLeft, 2do:TopRight 3ro:BottomRight 4to:BottomLeft */
+.bordeRecuadro{
+    border: 10px inset black;
+    border-radius: 5px 10px 5px 20px;
+}
+.bordeRecuadroInverso{
+    border: 10px outset black;
+}
+.sinBorde{
+    border: none;
+}
+
+/* Podemos mixear bordes especificando cada uno en sentido horario */
+.bordeMixto{
+ border-style: solid double dotted inset;
+ border-width: 10px;
+}
