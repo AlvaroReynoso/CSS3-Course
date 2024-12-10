@@ -25,7 +25,7 @@ border-radius: 5px;
 .texto{
     /* importante : para que quede centrado y alineado, tambien que las oraciones esten bien distribuidas */
     text-align: justify;
-    /* no se ve mucho pero es la distribucion de las palabras ,de right to left */
+    /* no se ve mucho pero es la distribucion de las palabras ,de left to right */
     direction: ltr;
     text-decoration: none;
     /* sangria */
