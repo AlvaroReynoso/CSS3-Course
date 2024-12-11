@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* elementos block por defecto: h1,div,p,li */
 
 /* Elementos inline: links, imagen, span,em, */
@@ -64,4 +65,72 @@ div{
 .menu a{
     color: white;
     text-decoration: none;
+=======
+/* elementos block por defecto: h1,div,p,li */
+
+/* Elementos inline: links, imagen, span,em, */
+
+
+h1, div, p{
+    padding: 10px;
+    text-align: center;
+    color: crimson;
+    font-size: 2em;
+    border:3px solid;
+    display: block; /*Predeterminado*/
+    /* display: inline : todos en una misma linea de left to right*/
+}
+
+/*span : inline por defecto ,ocupa la cantidad de espacio q necesita y no se muestra en una nueva linea
+podemos configurar para que se comporte como block o el display q necesitemos */
+
+span{
+    display: block /*inline seria por defecto*/;
+    border: 1px solid blue;
+}
+a{
+    /* por default es left ,entonces al aplicarle block se irian a la derecha,no se ve cambio en display inline */
+    text-align: right;
+    /* display: block;*/
+}
+li{
+    /* con inline se ve en 1 sola linea ,por defecto es block */
+    display: inline;
+}
+
+/* Cno display none Ocultamos! 
+En inspeccion de elemento (navegador) existe el elemento oculto*/
+
+h2{
+    display: none;
+    color: red;
+    text-align: center;
+}
+/* con visibility hidden tambien podemos ocultar ,pero el espacio queda vigente */
+
+div{
+    display: block;
+    /* visibility: hidden; */
+    /* con js se puede manipular estos eventos hidden ,mostrar o ocultar */
+}
+
+.menu{
+   list-style-type:none;
+   text-align: center;
+}
+.menu li{
+    /* hay que hacerlo en forma de bloque ya que sino se pegaria a los otros elementos
+    y no podemos editar el padding,margin. */
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 10px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+>>>>>>> 3ad42e037f2c3967b6bda963974eb9be0588b324
 }
