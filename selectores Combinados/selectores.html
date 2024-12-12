@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores combinados en CSS</title>
+    <link rel="stylesheet" href="./selectores.css">
+</head>
+
+<body>
+    <h1>Selectores Combinados CSS</h1>
+    <h2>Selector descendiente</h2>
+    <!-- Selectore descendiente, sin importar si son elementos dentro de elementos -->
+    <div class="contenedor descendiente">
+        Selectores descendientes en cualquier nivel interno
+        <p>1er Parrafo</p> <!-- Hijo de contenedor descendiente -->
+        <p>2do Parrafo</p> <!--Hijo de contenedor descendiente  -->
+        <section> <!--tambien es hijo de contenedor descendiente -->
+            <!-- aca esta agarrando un nivel mas interno -->
+            <p>
+
+                Tercer Renglon <!--Elemento descendiente de contenedor pero hijo de section-->
+            </p>
+        </section>
+    </div>
+
+    <div class="contenedor interno">
+        <div>
+            <div class="interno2">
+                <p>Hola</p>
+            </div>
+            <p>Hola1</p>
+        </div>
+        <p>Hola2</p>
+    </div>
+
+    <h2>Selector combinado Child o Hijo</h2>
+
+    <div class="contenedor hijo">
+        Selectores hijos (solo aplica a hijos ,no descendientes)
+        <p>1er Parrafo</p> <!-- Hijo de contenedor Hijo -->
+        <p>2do Parrafo</p> <!-- Hijo de contenedor Hijo -->
+        <section> <!-- Hijo de contenedor Hijo -->
+            <p>
+                3er Parrafo <!-- este no es hijo, es descendiente del contenedor -->
+            </p>
+        </section>
+        <p>4to Parrafo</p>
+    </div>
+    <h2>Selector combinado Sibling (Adyacente)</h2>
+    <div class="contenedor adyacente">
+        Selector Adyacente
+        <p>1er Parrafo (hijo)</p> <!-- Hijo de contenedor Hijo -->
+        <section>
+            <p>
+                2do parrafo (descendiente del div e hijo de section)
+            </p>
+        </section>
+    </div>
+    <p>3er parrafo,a este se le aplica ya que es el elemento adyacente</p>
+    <p>4to parrafo, a este ya no porque no es adyacente,sino que es el siguiente del adyacente</p>
+    <h2>Selector combinado Child o Hijo</h2>
+    <div class="contenedor hermano">
+        Selector Adyacente
+        <p>1er Parrafo (hijo)</p> <!-- Hijo de contenedor Hijo -->
+        <section>
+            <p>
+                2do parrafo (descendiente del div e hijo de section)
+            </p>
+        </section>
+    </div>
+    <p>3er Parrafo, hermano del div "contenedor hermano"</p>
+    <p>4to Parrafo, hermano del div "contenedor hermano"</p>
+    <div>
+        <p>5to parrafo ,no es editada por el div hermano porque no es hermano,sino hijo del div en el que esta </p>
+    </div>
+
+</html>
