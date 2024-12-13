@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sofia&family=Trocchi&display=swap');
+/* PARA USAR EFECTOS ,CAMBIO LA RUTA /CSS2 por /CSS y agrego al final el &effect=fire-animation (existen mas)*/
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&family=Trocchi&effect=fire-animation&display=swap');
+/* para importar fonts tener ojo con la version de css2, fijese como se aplica en el 1er import */
+
+/* ESTANDAR DE TAMAÑO DE LETRAS: 16PX = 1EM */
+h1{
+    color: #ef476f;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px #ced4da;
+    width: 83%;
+
+}
+
+.cont{
+    padding: 5px;
+    width: 40%;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    float: left;  
+}
+.cont.serif{
+ background-color:#5a189a;
+}
+
+.fuenteTimes{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
+.cont.serif.azul{
+    background-color: blue;
+}
+.cont.sans{
+    background-color: red;
+}
+
+.fuenteGeorgia{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* italic la hace cursiva y la acuesta un poco */
+    font-style: italic;
+    font-size: 1em /*1em = 16px*/;
+    /* Tipo de fuente responsivo: VW= view width,si modifico el ancho la fuente se adapta
+    1vw=1% pantalla */
+    /* font-size: 1vh; */
+}
+
+.fuenteArial{
+    font-family: Arial, Helvetica, sans-serif;
+    /*oblique la acuesta un poco */
+    font-style: oblique;
+    
+}
+
+.cont.sans.verde{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: green;
+    
+}
+
+.cont.monoSpace{
+    background-color: #ff6589;
+}
+
+.fuenteCourier{
+    font-family: 'Courier New', Courier, monospace;
+    /* weight: mas negrita o mas fina */
+    font-weight: bold;
+}
+.cont.cursive{
+    background-color: black;
+    height: 76px;
+    font-size: 16px;
+}
+.fuenteCursive{
+    font-family: 'Lucida Handwriting', cursive;
+}
+.cont.google{
+    background-color: chocolate;
+}
+/* link font family ,en google font explica como usarlo,casi siempre se define en font-family */
+
+.fuenteGoogle{
+    font-family: "Sofia",cursive;
+}
+
+.cont.google.lila{
+    background-color: purple;
+    height: 64.5px;
+}
+.fuenteRoboto{ 
+    /* esto se puede simplificar tambien, en 1 sola linea,respetando un orden.. 
+    font : style,variant,weight,size/line-height,font-family (los unicos requierdos si o si son: size y family)*/
+    font: italic small-caps bolder 20px/10px "Roboto",sans-serif
+        /* font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: italic; */
+
+}
