@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&family=Trocchi&effect=fire-animation&display=swap');
+
+/* EN LOS ICONOS DE GOOGLE ,DESPUES DE IMPORTAR Y NOMBRAR LAS CLASES PARA ICONOS... 
+Buscar en google icons el icono y copiar la clase y el nombre del icono para que se aplique */
+
+/* EN BOOTSTRAP EL NOMBRE DE LA CLASE ES DIRECTAMENTE EL ICONO */
+
+body{
+    background-color: rgb(61, 36, 36);
+}
+
+h1{
+    font-family: "roboto";
+    color: rgb(162, 211, 147);
+    text-align: center;
+    font-size: 25px;
+}
+div{
+    padding: 15px;
+    margin: auto;
+    max-width: 400px;
+
+}
+p{
+    color: antiquewhite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-weight: 600;
+}
+
+.bi-alarm{
+    font-size: 2em;
+    vertical-align: middle;
+}
+.bi-twitch{
+    font-size: 2em;
+    vertical-align: middle;
+}
+
+.bi-router-fill{
+    vertical-align: middle;
+}
+
+/* iconos desde bootstrap */
+.bi-robot{
+font-size: 2em;
+color: cornflowerblue;
+}
+
+.bi-suit-heart-fill.iconoRojo{
+    font-size: 2em;
+    color: rgb(255, 25, 25);
+}
+
+/* iconos de google */
+
+div .material-symbols-outlined{
+    /* importante : pone el icono para que se alinie con el parrafo */
+    vertical-align: top;
+    font-size: 2em;
+}
+
+.material-symbols-outlined.cara{
+    font-size: 2em;
+    color: coral;
+    vertical-align: middle;
+}
+
+.iconoIonic{
+    color: blueviolet;
+    vertical-align: middle;
+    font-size: 2em;
+}
+.planetIcon{
+    font-size: 2em;
+    vertical-align: middle;
+    color:  rgb(60, 184, 60);
+}
+
+.reactLogo{
+    font-size: 2em;
+    vertical-align: middle;
+    color: dodgerblue;
+}
+.designLogo{
+    font-size: 2em;
+    vertical-align: middle;
+    color: rgb(233, 38, 38);
+}

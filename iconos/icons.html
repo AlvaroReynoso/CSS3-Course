@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconos en CSS</title>
+    <link rel="stylesheet" href="./icons.css">
+    <!-- url de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- url de google icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- url de ionic icons como en js ,esta abajo terminando el body-->
+
+</head>
+
+<body>
+    <h1>Iconos en Bootstrap</h1>
+    <div>
+        <p>
+            <!-- iconos de bootstrap se llaman en la clase -->
+            <i class="bi-alarm"></i> Alarma
+        </p>
+        <p>
+            <!-- SVG: Se puede modificar color en fill y tamaño en width y height -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="rgb(122,12,241)" class="bi-twitch"
+                viewBox="0 0 16 16">
+                <path
+                    d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z" />
+                <path d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z" />
+            </svg>
+            Twitch
+        </p>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="limegreen" class="bi-router-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707" />
+                <path
+                    d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707Z" />
+                <path
+                    d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86zM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m4.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m1.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0" />
+                <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0" />
+            </svg>
+            WiFi
+        </p>
+        <p>
+            <!-- Con la clase se pueden editar en css, en cambio los svg se editan aqui mismo en HTML -->
+            <i class="bi-robot"></i>
+            Robot
+        </p>
+        <p>
+            <i class="bi-suit-heart-fill iconoRojo"></i>
+            Like
+        </p>
+    </div>
+    <h1>Iconos de Google<i class="material-symbols-outlined">check</i></h1>
+    <div>
+        <p>
+            <!-- ademas de importar la ruta en HTML tengo que definir esta clase "material-symbols-outlined" y dentro de la tag escribir los iconos , ej: search -->
+            <i class="material-symbols-outlined">search</i>
+            Busqueda
+        </p>
+        <p>
+            <i class="material-symbols-outlined">done</i>
+            Tarea terminada
+        </p>
+        <p>
+            <!-- nombre encontrado en google icons -->
+            <i class="material-symbols-outlined cara">add_reaction</i>
+            añadir reacción
+        </p>
+    </div>
+    <h1>Iconos de Ionic icons</h1>
+    <div>
+        <p>
+            <!-- la clase se la defino yo y ahi puedo editarlo -->
+            <ion-icon name="home-outline" class="iconoIonic"></ion-icon>
+            Home
+        </p>
+        <p>
+            <ion-icon name="planet" class="planetIcon"></ion-icon>
+            Planeta con fill
+        </p>
+        <p>
+            <ion-icon name="logo-react" class="reactLogo"></ion-icon>
+            React.js
+        </p>
+        <p>
+            <ion-icon name="logo-designernews" class="designLogo"></ion-icon>
+            Designer News
+        </p>
+    </div>
+    <!-- url de ionic icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
