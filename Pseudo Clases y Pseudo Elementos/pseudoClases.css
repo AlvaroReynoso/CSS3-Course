@@ -1,0 +1,43 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.contenedor{
+    width: 30%;
+    height: 20%;
+    margin: auto;
+    border: 3px solid #a8dadc;
+    padding: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+
+}
+
+/* hover: es para que al pasar el cursor por ese elemento,este transforme algo deseado */
+
+div.contenedor:hover{
+    background-color: #457b9d;
+    color: #f1fadd;
+}
+
+/*Aqui oculto el parrafo (esto acordarse que es descendiente)  */
+
+div.contenedor.oculto p{
+    display: none;
+}
+
+/* aca cuando pasemos por encima se va a visualizar gracias al hover */
+div.contenedor.oculto:hover p{
+display: block; /*Aca lo hago aparecer digamos*/
+background-color: #a8dadc;
+color: #023e8a;
+padding: 15px;
+}
+
+/* El primer hijo del div "contenedor primero" va a cambiar  */
+div.contenedor.primero p:first-child{
+font-variant: small-caps;
+}
+
