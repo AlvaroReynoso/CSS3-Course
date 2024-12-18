@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    color:violet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    text-align: center;
+}
+/* los :: es sintaxis para seleccionar PseudoElementos!!! */
+/* Cuando seleccionemos este parrafo dentro del div, se aplican los cambios */
+div.contenedor p::selection{
+color:red;
+background-color: yellow;
+}
+
+/* esto es para hacer cambios en la primera linea ,con sintaxis :: para seleccionar pseudo elementos
+Si hacemos zoom ,son menos palabras entonces la 1er linea queda mas pequeña ,solo aplica 1era linea */
+div.contenedor p::first-line{
+font-variant: small-caps;
+color: rgb(182, 148, 137);
+}
+
+/* tambien podemos manipular la 1era letra del parrafo */
+div.contenedor p::first-letter{
+    font-size: 25px;
+    color: brown;
+    background-color: antiquewhite;
+}
+
+/* vamos a seleccionar guiones medios al final y al principio del parrafo */
+div.contenedor p::before{
+    content: "- "; /*Con content agrego contenido al p en este caso, en general es para agregar algo al contenido*/
+}
+
+div.contenedor p::after{
+    content: " -";
+    /* content: url(); Con este linea agregamos una imagen "after" del contenido */
+}
