@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.relative{
+position: relative;
+margin: auto;
+border: 3px dotted green;
+width: 30%;
+
+}
+div.relative img{
+    width: 100%;
+    opacity: 0.4;
+}
+div.absolute{
+position: absolute;
+font-size: 1.5em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: black;
+top: 38%;
+width: 100%;
+/* con el width al 100% le estoy diciendo que cumpla con el ancho del otro div 
+entonces ahi centro el texto*/
+text-align: center;
+
+}
