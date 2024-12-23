@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento Div en CSS</title>
+    <link rel="stylesheet" href="./pos.css">
+</head>
+
+<body>
+    <h1>Centrar elementos Div</h1>
+    <div>Elemento tipo Div,por defecto: position=Static</div>
+    <div class="relative">
+        <p>Soy un div con position= Relative,con movimiento top y left</p>
+    </div>
+
+    <p>Elemento de parrafo, vemos que con relative en el div ,muevo libremente la caja y choca con el parrafo</p>
+    <p>2do elemento de parrafo</p>
+    <div class="relativePadre">
+        Div padre position:relative
+        <div class="absolute">
+            <p>Soy un div con position: absolute, voy a acompañar al div padre</p>
+        </div>
+    </div>
+    <div class="fixed">Soy un div con position: Fixed, top y left. Vemos que si se scrollea yo ocupo el mismo lugar
+    </div>
+    <div class="sticky">Soy un div Sticky, quedo pegado en el sector</div>
+    <p class="par">ultimo elemento parrafo con clase </p>
+
+
+
+</body>
+
+</html>

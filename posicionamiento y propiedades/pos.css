@@ -1,0 +1,81 @@
+/* 1er regla para centrar es proporcionar un tamaño al elemento */
+h1{
+    text-align: center;
+    color: crimson;
+    margin-top: 50px;
+}
+
+div{
+    /* el % en width es responsivo!
+    valor en px son fijos en width comun, NO SON responsivos 
+    max-width en px o valores fijos: tambien son responsivos!*/
+    max-width: 400px;
+    border: 3px solid firebrick;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+/* TIPOS DE POSICIONAMIENTO
+1: ESTATICO
+con top-left-right-bottom podemos generar diferentes medidas (MENOS EN STATIC)
+2:RELATIVO
+3:FIXED
+4:ABSOLUTE
+5:STICKY */
+.relative{
+width: 50%;
+position: relative;
+top: 30px;
+right: 43px;
+/* estos movimientos grandes hay que tratar de evitarlos para paginas responsivas, ya que es dificil de mantener */
+}
+
+/* Fixed:elemento div se coloca de forma relativa en el viewport (pantalla disponible en la pagina) */
+/* Toma los valores iniciales: Top Left 
+y el espacio donde existe nativamente el div se puede usar o reemplazar por otro elemento*/
+.fixed{
+position: fixed;
+top: 0;
+right:10px;
+/* Esto se usa en menus, icono de chat, barras de navegacion ,etc */
+}
+
+.relativePadre{
+    height: 100px;
+    width: 100%;
+    position:relative;
+    padding-top: 30px;
+    top: 140px;
+    left: 150px;
+}
+
+.absolute{
+/* se mueve en base a un div padre y si no hay div padre se mueve en base al document, osea a la pantalla entera 
+por lo general tiene que estar dentro de otro div con position:relative para que cuando mueva
+el padre relativo este acompañe*/
+position: absolute;
+width: 50%;
+height: 60px;
+right: 0;
+bottom: 0;
+border: 0.4px solid;
+/* justify: buena distribucion de texto */
+text-align: justify;
+direction:rtl ;
+}
+
+.sticky{
+width: 30%;
+text-align: justify;
+font-style: italic;
+margin: 1px;
+position: sticky;
+top: 0;
+left: 0;
+color: blueviolet;
+/* Se usa tambien en menus desplegables, barras de navegacion ,chats
+en safari se necesita agregar... position: -webkit-sticky */
+}
+.par{
+    padding-bottom: 1500px;
+}
