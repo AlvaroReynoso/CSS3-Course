@@ -1,0 +1,36 @@
+h1{
+    color: blue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Con float: podemos hacer que los elementos ocupen la misma linea, lo puedo posicionar con right ,left  */
+/* por defecto es float:none */
+
+.contenedor{
+    border: 2px dotted goldenrod;
+    height: 60px;
+    width: 30%;
+    overflow: scroll;
+    margin: auto;
+}
+
+.contenedor.float.cont1{
+    border: 2px solid red;
+    float: left;
+}
+
+.contenedor.float.cont2{
+    float: right;
+    border: 2px dotted green;
+}
+
+/* Con clear puedo limpiar el float para que los elementos siguientes no esten afectados por float,ej: si quiero centrar algo fuera */
+
+.contenedor.cont3{
+    /* Si no coloco clear:both ...Se va a colocar en la misma linea */
+    clear: both;
+    border: 3px dashed darkmagenta;
+    margin: auto;
+    margin-top: 200px;
+}
