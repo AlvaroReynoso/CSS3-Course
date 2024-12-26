@@ -1,0 +1,38 @@
+/* Mas grande z-index mas capas adelante va a estar, menor.. mas atras
+Todos los elementos posicionados van a estar por encima de los elementos no posicionados */
+/* valores no posicionados tienen valor z-index: auto */
+h1{
+    text-align: center;
+    color: blue;
+}
+div.static{
+position: static;
+padding: 15px;
+top: 10px;
+border: 3px solid greenyellow;
+background-color: whitesmoke;
+}
+
+div.relative{
+    width: 50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    padding: 15px;
+    border: 3px solid blueviolet;
+    background-color: whitesmoke;
+    /* z-index:-1 = Se va a mostrar por detras de otros divs ,si inspeccionamos vemos 
+    que se muestra primero el body al querer seleccionarlo 
+    cambiamos el top negativo y vemos que se muestra detras del otro div*/
+}
+
+div.absolute{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 112px;
+    border: 3px solid cornflowerblue;
+    background-color: whitesmoke;
+    z-index: -1;
+    /* al tener solo z index este ,se va a ver detras de los 2 divs */
+}
