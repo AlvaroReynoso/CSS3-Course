@@ -1,0 +1,20 @@
+/* Overflow vamos a necesitarlo solo si se define el height chico o fijo */
+h1{
+    color: blue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    margin: auto;
+    width: 30%;
+    height: 100px;
+    border: 1px solid;
+    /* Con Overflow podemos hacer que no desborde el texto ,sino que quede dentro del div o caja donde este */
+    /*  */
+    overflow: auto;  /* Por defecto es overflow: visible */
+    /* con auto : pone las barras de scrolls necesarias ,se puede mostrar la barra de x o y 
+    innecesariamente */
+
+    overflow-y: scroll; /*Solo sentido y en scroll*/
+    overflow-x: scroll; /*Solo sentido x en scroll*/
+}
