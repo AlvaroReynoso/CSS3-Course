@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* DISPLAY FLEX...permite una distribución y alineación más eficiente y controlada de los elementos dentro del contenedor. */
+body{
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+/* flex direction da el sentido vertical o horizontal, es crucial */
+}
+
+h1{
+    text-align: center;
+    text-shadow: 2px 2px 2px #a8dadc;
+    color: #e63046;
+}
+
+/* wrap(envolver):Envuelve elementos para que no desbordeen */
+
+div.cont{
+display: flex;
+border: 2px solid;
+margin: auto;
+height:250px;
+width: 50%;
+background-color: antiquewhite;
+/* flex-wrap: wrap;
+flex-direction: row;
+estas 2 lineas podemos simplificarla en esta siguiente */
+flex-flow: row wrap;
+align-content: flex-start; /*Alinea los elementos de forma vertical: flex end: inferior,flex-start: superior, space-around y space between*/
+/* para visualizar el cambio tiene que haber mas de 1 linea */
+/* flex-wrap: envuelve los elementos dentro de este div */
+}
+
+/* acordarse de align-self: que es para alinear elementos individualmente  */
+
+div.cont > p{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: auto;
+padding: 15px;
+border: 2px solid;
+width: 20%;
+height: 50px;
+background-color: #e63046;
+color: aliceblue;
+}
+
+/* justify-content: X
+Align-items: Y                */
+
+.center{
+    display: flex;
+    border: 2px solid;
+    justify-content: space-around; /*Separa en eje X*/
+    align-items: center; /*Separa en eje Y, flex-start:centro-arriba , flex-end: medio-abajo...por default: stretch(largo de todo el eje Y*/
+    /* align-items: baseline..cuando tengo distintas alturas en los elementos..los coloca todos en el mismo inicio */
+    height: 300px;
+    margin-bottom: 150px;
+}
+
+.center > p{
+    color: #af1d1d;
+    background-color: rgb(243, 255, 173);
+    border: 3px solid burlywood;
+}

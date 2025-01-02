@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex en CSS</title>
+    <link rel="stylesheet" href="./flex.css">
+</head>
+
+<body>
+    <h1>FlexBox en CSS</h1>
+    <div class="cont">
+        <!-- individualmente puedo cambiar el tamaño gradualmente con flex-grow, sirve para rellenar espacios -->
+        <p style="order: 6; flex-grow:1;">par1, cambio a pos 6</p>
+        <p style="order: 5;">par2, cambio a pos 5</p>
+        <p>par3</p>
+        <!--  puedo modificar los elementos individualmente  -->
+        <p>par4</p>
+        <p>par5</p>
+        <!-- ej: para que llegue el par 6 a pos1 tengo que cambiar todos hasta que el par 6 me quede en pos 1 -->
+        <p style="flex-basis: 10px;">par6</p>
+        <!-- flex-basis: sirve para cambiar el tamaño fijo y los demas se mantienen original -->
+    </div>
+    <div class="center">
+        <p>par 7</p>
+        <p>par 8</p>
+        <p>par 9</p>
+    </div>
+</body>
+
+</html>
