@@ -1,0 +1,299 @@
+/* IMPORTANTISIMO: Para colocar libremente en cierta columna o fila usamos ej:
+.s{
+  grid-column: 5/span 1; ==> Significa que se coloca en la columna 5 del grid
+  grid-row: 3/span 1;   ===> Significa que se coloca en la fila 3 del grid
+}
+ */
+
+ /* En grid usar para separar GAP! no MARGIN  */
+
+ body{
+  background-color: rgb(17, 27, 34);
+ }
+
+ h1{
+  text-align: center;
+  color: yellowgreen;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: 1px 1px 23px #6a5acd;
+  font-size: 3em;
+ }
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas iguales */
+    grid-template-rows: repeat(4, 1fr);   /* 4 filas iguales */
+    gap: 10px; /* Espacio entre los elementos */
+  }
+  .grid-container div{
+    height: 40px;
+    text-align: center;
+  }
+  .item {
+    background-color: #888; /* Color de relleno */
+    border-radius: 8px;     /* Esquinas redondeadas */
+  }
+  
+  .item1 {
+    grid-column: span 4; /* Ocupa 4 columnas */
+    grid-row: span 2;    /* Ocupa 2 filas */
+    background-color: #a3d977; /* Color personalizado */
+  }
+  
+  .item2 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #8bc34a;
+  }
+  
+  .item3 {
+    grid-column: span 2;
+    grid-row: span 3;
+    background-color: #9370db;
+  }
+  
+  .item4 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: #6a5acd;
+  }
+  
+  .item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+    background-color: #6e6e6e;
+  }
+
+  .contenedor2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /*aca repito en eje x (1 fila) 4 columnas*/
+    /* es lo mismo colocar 1fr 1fr 1fr ,son 3 cuerpos*/
+    grid-template-rows: repeat(3,1fr);
+
+    /* es lo mismo colocar 1fr 1fr 1fr 1fr ,son 4 cuerpos*/
+    gap: 5px;
+
+  }
+
+  .contenedor2 div{
+    border: 1px solid rgb(16, 140, 255);
+    margin: 5px;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .i6{
+    grid-column: span 2;  /*Ocupa el espacio de 2 columnas*/
+    grid-row: span 3; /*Ocupa el espacio de 3 filas*/
+   }
+
+   .i7{
+    grid-column: span 1;  /*Ocupa el espacio de 1 columna*/
+    grid-row: span 3;     /*Ocupa el espacio de 3 filas*/
+   }
+   .i8 {
+    grid-column:span 1;
+    grid-row: span 2;
+   }
+   .i9{
+    grid-column:span 1 ;
+    grid-row:span 1;
+   }
+   .i10{
+    grid-column: span 1;
+    grid-row: span 1;
+   }
+
+   .i8{
+    /* puedo usar display flex para centrar elementos internos del div del div principal grid */
+    display: flex;
+    justify-content: center;
+    grid-column: span 1;
+    grid-row: span 3;
+
+   }
+
+   .contenedor3{
+    margin-top: 30px;
+    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+   }
+   
+   .contenedor3 div{
+    border: 2px solid #9370db;
+    margin: 5px;
+    position: relative;
+    overflow: hidden;
+    height:500px;
+    border-radius: 15px;
+   }
+  .contenedor3 div img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute; /* Asegurar que la imagen ocupe todo el espacio del div */
+  top: 0;
+  left: 0;
+  
+  }
+   
+.u{
+  /* IMPORTANTE : Elijo donde empieza y donde termina este div en el grid,me permite precision */
+/* Esto es lo mismo que grid-row-start: 1 y end en 2 ,grid.column-start:1 y end 2 */
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  grid-column: 1/span 1;
+  grid-row: 1/span 3;
+  /* SPAN siginifica que ocupe tales lugares ,ej: row span 2: ocupa 2 filas */
+}
+
+.d{
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.t{
+  grid-column: 1/span 2;
+  grid-row: 2/span 1;
+}
+
+.c{
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.cinco{
+  /* CON ESTOS VALORES ES MUCHO MAS PRECISO
+  Buena informacion para tratar a los elementos del grid mas libremente */
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2; 
+  /* tambien puede ser */
+  /* grid-column: 3/6;
+  grid-row:2/2; */
+}
+
+.s{
+  grid-column: 3/span 1;
+  grid-row: 3/span 1;
+
+}
+
+.contenedor4{
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  /* si justo una columna tiene otro tamaño y se repiten las demas entonces uso el valor y despues el repeat */
+  grid-template-columns: repeat(4,1fr); /*75px,2 de 1fr y la ultima de 55px*/
+  /* si tengo algun valor intercalado ej: 25px 50px 25px 50px 25px 50px
+  entonces.... grid-template-columns: repeat(3,25px 50px); */
+  /*(IMPORTANTE Y USABLE)Para que sea responsivo ,puedo generar que cierta columna tenga como minimo un valor y como max otro
+  entonces quedaria... grid-template-columns:minmax(100px,1fr)1fr 1fr;
+  Con mover la pagina vemos que colapsa las demas porque esta tiene un valor minimo de 100 */
+  /* grid-auto-rows: 100px; Genera automaticamente filas de 100px (no recomendable ya que choca con otros divs inferiores)*/
+  /* con column o row gap es mas especifica la separacion */
+  grid-column-gap:15px ;
+  grid-row-gap: 5px;
+}
+/* responsive grid , <800 px de pantalla entonces cambia el grid a 1 fila x 1 columna */
+/* cuando el ancho sea menor a 600 se aplica 1 sola columna */
+/* Menor a 1100px: 1 columna */
+@media (max-width: 600px) {
+  .contenedor4 {
+    grid-template-columns: 1fr;
+  }
+  .contenedor4 div{
+    margin: auto;
+  }
+}
+@media (min-width:600px) and (max-width: 1000px) {
+  .contenedor4 {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .contenedor4 div{
+    margin: auto;
+  }
+}
+
+@media(min-width:1000px)  and  (max-width:1300px){
+  .contenedor4{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .contenedor4 div{
+    margin: auto;
+  }
+}
+
+@media (min-width:1300px) and (max-width:3930px){
+  .contenedor4{
+    grid-template-columns: repeat(4,1fr);
+  }
+  div.cinc{
+    margin: auto;
+    grid-column: 2/ span 1;
+    grid-row: 2/span 1;
+  }
+  div.seis{
+    margin: auto;
+    grid-column: 3/ span 1;
+    grid-row: 2/span 1;
+  }
+}
+/* @media (min-width: 1300px){
+  .contenedor4{
+    grid-template-columns: repeat(4,1fr);
+  }
+} 
+Redundante ya que aca ya aplicaria los valores originales establecidos en .contenedor4  
+*/
+
+
+
+.contenedor4 div {
+  margin: auto;
+  border: 2px solid red;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+
+.contenedor4 div img{
+  position: absolute;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+}
+
+.un{
+grid-column: span 1;
+grid-row: span 1;
+}
+.dos{
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.tres{
+  grid-column: span 1;
+grid-row: span 1;
+}
+
+.cuatro{
+  grid-column: span 1;
+grid-row: span 1;
+}
+.cinc{
+  grid-column: span 1;
+grid-row: span 1;
+}
+.seis{
+  grid-column: span 1;
+grid-row: span 1;
+
+}
